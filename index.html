@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Demo Wissensvisualisierung</title>
+    <script src="http://d3js.org/d3.v5.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+		
+	</style>
+</head>
+
+<body>
+    <div class="full-width">
+		<h1>Wissensstand im Unternehmen (Manager-View)</h1>
+	</div>
+
+	<div class="container">
+		<div class="half-width center"><h3>TOP Themen im Unternehmen</h3></div>
+		<div class="half-width center"><h3>Wissendsokumantation pro Bereich</h3></div>
+		<div class="half-width left" id="left-up"></div>
+		<div class="half-width right" id="right-up"></div>
+		<div class="clear"></div>
+	</div>
+
+    <div class="container">
+		<div class="half-width center"><h3>Beiträge pro Bereich</h3></div>
+		<div class="half-width center"><h3>Beiträge pro Thema</h3></div>
+		<div class="half-width center">
+			<select id="ld_dataSelect">
+                <option value="ld_data1.csv">Alle Abteilungen</option>
+                <option value="ld_data2.csv">Abteilung Backend</option>
+                <option value="ld_data3.csv">Abteilung Frontend</option>
+                <option value="ld_data4.csv">Abteilung Testing</option>
+                <option value="ld_data5.csv">Abteilung Marketing</option>
+            </select>
+		</div>
+		<div class="half-width center">
+			<select id="rd_dataSelect">
+                <option value="rd_data1.csv">Alle</option>
+                <option value="rd_data2.csv">Data Analytics</option>
+                <option value="rd_data3.csv">Text Mining</option>
+                <option value="rd_data4.csv">Visualisierung</option>
+                <option value="rd_data5.csv">D3.JS</option>
+                <option value="rd_data6.csv">IBCS</option>
+            </select>
+		</div>
+		<div class="clear"></div>
+		<div class="half-width left" id="left-down"></div>
+		<div class="half-width right" id="right-down"></div>
+		<div class="clear"></div>
+	</div>
+    <div class="half-width center">letzte Aktualisierung: 15:23Uhr 05.03.2023</div>
+    
+
+
+    <script src="lu.js"></script>
+    <script src="ru.js"></script>
+    <script src="ld.js"></script>
+    <script src="rd.js"></script>
+</body>
+
+</html>
